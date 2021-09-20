@@ -1,29 +1,19 @@
 
 import java.util.*;
 
-/**
- * 
- */
 public class Administrateur extends Utilisateur {
 
-    /**
-     * Default constructor
-     */
-    public Administrateur() {
+    public Administrateur(int numEtudiant, String nom, String prenom,String adressepostale, String adressemail) {
+        super(nom,prenom,adressepostale,adressemail);
     }
 
-    /**
-     * 
-     */
-    public Cours creerCours() {
-        return new Cours();
+    public Cours creerCours(String intitule) {
+        return new Cours(intitule);
     }
 
-    /**
-     * 
-     */
+
     public void supprCours(Cours c) {
-        c.supprimerCours;
+        // TODO implement here
     }
 
 }

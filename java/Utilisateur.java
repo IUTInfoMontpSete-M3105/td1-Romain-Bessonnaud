@@ -1,40 +1,52 @@
 
 import java.util.*;
 
-/**
- * 
- */
 public class Utilisateur {
 
-    /**
-     * Default constructor
-     */
-    public Utilisateur(string nom, string prenom,string adressepostale) {
+    private String prenom;
+    private String adressePostale;
+    private String adresseMail;
+    private String nom;
+
+    public Utilisateur(String nom, String prenom,String adressepostale, String adressemail) {
+        this.nom=nom;
+        this.prenom=prenom;
+        this.adressePostale=adressepostale;
+        this.adresseMail=adressemail;
     }
 
-    /**
-     * 
-     */
-    private string nom;
+    public String getPrenom() {
+        return prenom;
+    }
 
-    /**
-     * 
-     */
-    private string prenom;
+    public String getAdressePostale() {
+        return adressePostale;
+    }
 
-    /**
-     * 
-     */
-    private string adresse postale;
+    public String getAdresseMail() {
+        return adresseMail;
+    }
 
-    /**
-     * 
-     */
-    private string adresse mail;
+    public String getNom() {
+        return nom;
+    }
 
-    /**
-     * 
-     */
+    public void setPrenom(String prenom) {
+        this.prenom = prenom;
+    }
+
+    public void setAdressePostale(String adressePostale) {
+        this.adressePostale = adressePostale;
+    }
+
+    public void setAdresseMail(String adresseMail) {
+        this.adresseMail = adresseMail;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
     public void consulterDonnes() {
         // TODO implement here
     }

@@ -1,41 +1,43 @@
 
 import java.util.*;
 
-/**
- * 
- */
 public class Devoir {
 
-    /**
-     * Default constructor
-     */
-    public Devoir() {
+    private String nom;
+    private String description;
+    public int nbPoints;
+    //private void deadline;
+
+
+    public Devoir(String nom, String description) {
+        this.nom=nom;
+        this.description=description;
+        nbPoints=0;
     }
 
-    /**
-     * 
-     */
-    private string nom;
 
-    /**
-     * 
-     */
-    private string description;
+    public String getNom() {
+        return nom;
+    }
 
-    /**
-     * 
-     */
-    private void deadline;
+    public String getDescription() {
+        return description;
+    }
 
-    /**
-     * 
-     */
-    public int nbPoints;
+    public int getNbPoints() {
+        return nbPoints;
+    }
 
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
 
+    public void setDescription(String description) {
+        this.description = description;
+    }
 
-
-
-
+    public void setNbPoints(int nbPoints) {
+        this.nbPoints = nbPoints;
+    }
 
 }

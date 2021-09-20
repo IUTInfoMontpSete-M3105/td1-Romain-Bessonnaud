@@ -1,36 +1,38 @@
 
 import java.util.*;
 
-/**
- * 
- */
 public class Etudiant extends Utilisateur {
 
-    /**
-     * Default constructor
-     */
-    public Etudiant() {
+    private int numEtudiant;
+    ArrayList<Cours> listCours = new ArrayList<>();
+
+    public Etudiant(int numEtudiant, String nom, String prenom,String adressepostale, String adressemail) {
+        super(nom,prenom,adressepostale,adressemail);
+        this.numEtudiant=numEtudiant;
     }
 
-    /**
-     * 
-     */
-    private int num etudiant;
-
-
-
-    /**
-     * 
-     */
-    public void suivreCours() {
-        // TODO implement here
+    public int getNumEtudiant() {
+        return numEtudiant;
     }
 
-    /**
-     * 
-     */
-    public void telechargerDevoir() {
-        // TODO implement here
+    public void setNumEtudiant(int numEtudiant) {
+        this.numEtudiant = numEtudiant;
+    }
+
+    public void suivreCours(Cours c) {
+        listCours.add(c);
+    }
+
+    public ArrayList<Cours> getListCours() {
+        return listCours;
+    }
+
+    public void telechargerDevoir(ArrayList<Cours> listCours) {
+        for (Cours c : listCours){
+            System.out.println(c.getIntitule() + ": \n");
+            System.out.println(c.getListDevoir());
+            System.out.println("\n\n");
+        }
     }
 
 }

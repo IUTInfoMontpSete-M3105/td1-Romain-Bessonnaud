@@ -1,28 +1,40 @@
 
 import java.util.*;
 
-/**
- * 
- */
+
 public class Cours {
 
     public boolean coursFini;
-    private string nom;
-    List listCours= new List(Cours);
+    private String intitule;
+    ArrayList<Devoir> listDevoir = new ArrayList<>();
 
-    /**
-     * Default constructor
-     */
-    public Cours(string nom) {
-        this.nom=nom;
+
+
+    public Cours(String intitule) {
+        this.intitule=intitule;
+        this.coursFini=false;
     }
 
-    /**
-     * 
-     */
-    public void supprimerCours(Cours c){
-        listCours.remove(c);
+    public boolean isCoursFini() {
+        return coursFini;
     }
+
+    public String getIntitule() {
+        return intitule;
+    }
+
+    public ArrayList<Devoir> getListDevoir() {
+        return listDevoir;
+    }
+
+    public void setIntitule(String intitule) {
+        this.intitule = intitule;
+    }
+
+    public void terminerCours(){
+        this.coursFini=false;
+    }
+
 
 
 
