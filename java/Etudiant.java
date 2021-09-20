@@ -27,8 +27,8 @@ public class Etudiant extends Utilisateur {
         return listCours;
     }
 
-    public void telechargerDevoir(ArrayList<Cours> listCours) {
-        for (Cours c : listCours){
+    public void telechargerDevoir() {
+        for (Cours c : this.listCours){
             System.out.println(c.getIntitule() + ": \n");
             System.out.println(c.getListDevoir());
             System.out.println("\n\n");

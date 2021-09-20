@@ -35,6 +35,10 @@ public class Cours {
         this.coursFini=false;
     }
 
+    public void ajouterDev(Devoir d){
+        listDevoir.add(d);
+    }
+
 
 
 
