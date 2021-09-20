@@ -32,9 +32,6 @@ public class Enseignant extends Utilisateur {
         d.setNbPoints(nbPoints);
     }
 
-    public void donnerDev(Cours c, Devoir d){
-        c.ajouterDev(d);
-    }
 
 
 }

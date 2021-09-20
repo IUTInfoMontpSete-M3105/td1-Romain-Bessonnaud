@@ -11,8 +11,9 @@ public class App {
 
         Cours coursCree= admin.creerCours("testCoursCree");
         e1.suivreCours(coursCree);
-        lebreton.donnerDev(coursCree,d1);
-        trombettoni.donnerDev(prog,d2);
+        e1.suivreCours(prog);
+        coursCree.ajouterDev(d1);
+        prog.ajouterDev(d2);
 
         e1.telechargerDevoir();
 
