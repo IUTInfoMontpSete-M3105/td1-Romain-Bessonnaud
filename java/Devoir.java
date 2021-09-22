@@ -40,4 +40,9 @@ public class Devoir {
         this.nbPoints = nbPoints;
     }
 
+    @Override
+    public String toString() {
+        return "Devoir: " + "nom du devoir= " + nom + ", description='" + description  + ", nbPoints=" + nbPoints;
+    }
+
 }

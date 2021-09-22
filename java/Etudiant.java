@@ -28,10 +28,11 @@ public class Etudiant extends Utilisateur {
     }
 
     public void telechargerDevoir() {
+        System.out.println("\n");
         for (Cours c : this.listCours){
-            System.out.println(c.getIntitule() + ": \n");
+            System.out.println(c.getIntitule());
             System.out.println(c.getListDevoir());
-            System.out.println("\n\n");
+            System.out.println("\n");
         }
     }
 

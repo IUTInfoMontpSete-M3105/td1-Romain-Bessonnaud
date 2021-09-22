@@ -48,7 +48,7 @@ public class Utilisateur {
     }
 
     public void consulterDonnes() {
-        // TODO implement here
+        System.out.println("je consulte des donnes");
     }
 
 }

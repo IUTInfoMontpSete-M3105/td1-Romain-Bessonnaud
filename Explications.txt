@@ -1,0 +1,3 @@
+Pour ce premier TP de COO je me suis remis a niveau donc je n'ai peut-être pas toujours utilisé les bons liens dans les différents diagrammes. C'est pourquoi j'ai donc dû modifier beaucoup le code généré par star UML.
+Pour ce qui est des choix que j'ai faits rien de très spécial. J'ai décidé de créer une liste de cours dans la classe étudiant pour simplifier la gestion.
+J'ai rencontré 2 soucis majeurs pour ce qui est de la suppression d'un cours et de l'assignation d'un enseignant.
